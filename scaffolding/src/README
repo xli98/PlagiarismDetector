@@ -1,0 +1,20 @@
+Course Number: 600.120
+section number: 2
+semester: fall 2016
+assignment number: 7
+Coco(Xiaoyan) Li, xli152
+
+What the program does:
+     This program takes in a list of files and create a model of ngrams(depending on user input n), then either print out the model or output generated phrases according to this model. It also includes catch unit testing program.
+
+     **make N in Makefile make the unittest for NgramCollection
+     **theoriatically make L in Makefile should make the unittest for LanguageModel, but that does not compile
+
+Source files:
+       NgramCollection.cpp: contains functions toString() that converts the model into printable strings in alphabetacal, reverse alphabetable or by count orders. It also includes increment(), helper function to makemodel(), and pickWord(), helper function to generate() function that makes the model.
+       LanguageModel.cpp: contains readinfile() function, function that reads in all the files given in the input file, and also makemodel(), which creates a model of Ngrams of all the files read in. 
+       unitTests-NgramCollection.cpp: unit testing for NgramCollection.cpp
+       unitTests-LanguageModel.cpp: unit testing for LanguageModel.cpp
+
+Thoughts and feedbacks:
+	 I liked this program in that it was similar to the last, yet because I took a different apporach my developmental plan changed drastically this time. Last time I concatnated the strings of multiple words into a single string to use as keys, whereas this time, becuase I don't know the size of n-grams, I had to use vectors as keys instead. The hardest part was before I got my makefile to compile since I encountered many linking errors between two classes, but I think I overall finished this assignment effectively. 

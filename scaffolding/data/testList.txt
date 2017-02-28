@@ -1,0 +1,2 @@
+../data/fenton/outOfTheEast.txt
+../data/fenton/inParisWithYou.txt
